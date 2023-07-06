@@ -1,0 +1,128 @@
+body{
+    background-image: url(background.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100%;
+}
+.head{
+    display: flex;
+    justify-content: space-around;
+}
+.logo img{
+    width:400px;
+}
+.logo img:hover{
+    width:500px;
+}
+.nav{
+    list-style: none;
+    margin:15px;
+    
+}
+.nav li{
+    display:inline;
+}
+.nav a{
+    color:black;
+    font-size: 20px;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding:10px;
+}
+.nav a:hover{
+    font-weight:600;
+}
+.cart img:hover{
+     width:100px;
+}
+.main{
+   display: flex;
+   position: relative;
+   top: 200px;
+   left:100px;
+}
+.contain a{
+    background-image: linear-gradient(rgb(154, 154, 229),rgb(243, 164, 243));
+    border-radius:10px;
+    padding: 10px 10px;
+    text-decoration: none;
+    color: aliceblue;
+    font-size: 35px;
+    font-weight: 600;
+}
+.contain h2{
+    font-size: 50px;
+    font-weight: 600;
+}
+.contain p{
+    font-size: 15px;
+    position:relative;
+    left:-10px;
+}
+.image{
+    position: absolute;
+    top:-200px;
+    left:350px;
+    bottom:100px;
+}
+.arrow{
+   position:relative;
+   top:250px;
+   display: flex;
+   left:100px;
+   padding:50px;
+}
+.arrow2 img{
+    margin:-10px -10px;
+    position:absolute;
+    left:200px;
+    width:100px;
+}
+.categories {
+    position:relative;
+    top:600px;
+}
+.categories h2{
+    text-align: center;
+    font-size: 50px;
+}
+.block{
+    position: relative;
+    top:600px;
+    left:100px;
+}
+.block img{
+     padding:5px;
+}
+.i1,.i2{
+    animation: anim1 5s linear  infinite;
+}
+@keyframes anim1{
+    100%{
+        transform:translateX(500px);
+    }
+}
+
+.i3{
+    animation: anim2 5s linear  infinite;
+}
+@keyframes anim2{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(45deg);
+    }
+}
+
+
+.i4,.i5{
+    animation: anim3 5s linear  infinite;
+}
+@keyframes anim3{
+    100%{
+        transform:translateX(-500px);
+    }
+}
